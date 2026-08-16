@@ -192,12 +192,6 @@ Contributions, issues, and feature requests are welcome. Feel free to open an is
 
 ---
 
-## License
-
-This project is licensed under the [MIT License](LICENSE).
-
----
-
 ## Acknowledgements
 
 Built with [Fastify](https://fastify.dev/), [Redis Streams](https://redis.io/docs/data-types/streams/), [Supabase](https://supabase.com/), and [React](https://react.dev/) + [Vite](https://vitejs.dev/).
