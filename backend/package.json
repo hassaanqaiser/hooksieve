@@ -1,0 +1,16 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "start": "node ingress.js",
+    "worker": "node worker.js"
+  },
+  "dependencies": {
+    "@fastify/cors": "^8.5.0",
+    "@supabase/supabase-js": "^2.112.3",
+    "@upstash/redis": "^1.38.2",
+    "dotenv": "^16.6.1",
+    "fastify": "^4.26.0"
+  }
+}

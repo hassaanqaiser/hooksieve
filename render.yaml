@@ -1,0 +1,32 @@
+services:
+  - type: web
+    name: hooksieve-ingress
+    env: node
+    rootDir: backend
+    buildCommand: npm install
+    startCommand: node ingress.js
+    envVars:
+      - key: UPSTASH_REDIS_REST_URL
+        sync: false
+      - key: UPSTASH_REDIS_REST_TOKEN
+        sync: false
+      - key: SUPABASE_URL
+        sync: false
+      - key: SUPABASE_KEY
+        sync: false
+
+  - type: worker
+    name: hooksieve-worker
+    env: node
+    rootDir: backend
+    buildCommand: npm install
+    startCommand: node worker.js
+    envVars:
+      - key: UPSTASH_REDIS_REST_URL
+        sync: false
+      - key: UPSTASH_REDIS_REST_TOKEN
+        sync: false
+      - key: SUPABASE_URL
+        sync: false
+      - key: SUPABASE_KEY
+        sync: false
