@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { CheckCircle2, Zap, Terminal, RefreshCw } from 'lucide-react';
 
-const API_URL = 'https://hooksieve.onrender.com';
+const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:3000';
 
 export default function HookSieveDashboard() {
   const [metrics, setMetrics] = useState({
