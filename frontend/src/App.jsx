@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { CheckCircle2, Zap, Terminal, RefreshCw } from 'lucide-react';
 
-const API_URL = 'https://hooksieve-production.up.railway.app';
+const API_URL = 'https://hooksieve.onrender.com';
 
 export default function HookSieveDashboard() {
   const [metrics, setMetrics] = useState({
