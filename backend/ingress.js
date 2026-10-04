@@ -4,6 +4,7 @@ import { Redis } from '@upstash/redis';
 import { createClient } from '@supabase/supabase-js';
 import { randomUUID } from 'crypto';
 import dotenv from 'dotenv';
+import './worker.js';
 
 dotenv.config();
 
